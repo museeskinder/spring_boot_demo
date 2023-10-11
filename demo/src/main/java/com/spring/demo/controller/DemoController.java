@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DemoController {
     @RequestMapping(value = {"/home", "/index"})
     public String demoControllerMethod(Model model) {
-        model.addAttribute("userName", "Muse");
+        model.addAttribute("userName", "Shebaw");
         return "index.html";
     }
 }

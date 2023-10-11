@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class DemoController {
-    @RequestMapping(value = {"/home", "/index"})
+    @RequestMapping(value = {"/home", ""})
     public String demoControllerMethod(Model model) {
-        model.addAttribute("userName", "Shebaw");
-        return "index.html";
+        return "home.html";
     }
 }
